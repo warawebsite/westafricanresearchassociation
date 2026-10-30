@@ -214,3 +214,119 @@
     font-size:29px!important;
   }
 }
+
+/* WARA full-width background and mission layout correction */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+}
+
+.wara-mission {
+  position: relative;
+  width: 100%;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 75px 20px 90px !important;
+  box-sizing: border-box;
+  background-color: #202126 !important;
+  background-image: url("../images/wara-woven-background.jpg") !important;
+  background-repeat: repeat !important;
+  background-size: auto !important;
+  background-position: center top !important;
+}
+
+.wara-mission > .wrap {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto !important;
+}
+
+.wara-mission-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 30px !important;
+  align-items: stretch;
+  margin-top: 65px;
+}
+
+.wara-mission-card {
+  position: relative;
+  padding-top: 75px;
+  text-align: center;
+}
+
+.wara-mission-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 140px;
+  border: 4px solid #00c2a9;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2;
+  background: #35363e;
+}
+
+.wara-mission-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.wara-mission-content {
+  height: 100%;
+  min-height: 250px;
+  padding: 90px 24px 30px !important;
+  border: 1px solid rgba(255,255,255,.35);
+  background: rgba(38,40,47,.88) !important;
+  box-sizing: border-box;
+}
+
+.wara-mission-content h3 {
+  color: #fff !important;
+  font-size: 23px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.wara-mission-content p {
+  color: #e5e5e5 !important;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+@media (max-width: 800px) {
+  .wara-mission-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+
+  .wara-mission-card {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* WARA News full-width background */
+.wara-news {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  box-sizing: border-box;
+  background-image: url("../images/wara-woven-background.jpg") !important;
+  background-repeat: repeat !important;
+  background-position: center top !important;
+  background-size: auto !important;
+}
+
+.wara-news .cards {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
