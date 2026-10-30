@@ -146,3 +146,37 @@
   margin: 0 auto;
   object-fit: contain;
 }
+
+/* Fix Mission Statement background width */
+.wara-mission-page {
+  position: relative;
+  left: 50%;
+  margin-left: -50vw !important;
+  width: 100vw !important;
+  max-width: none !important;
+  padding: 65px 24px 90px !important;
+  box-sizing: border-box;
+  background-color: #202126 !important;
+  background-image: url("../images/wara-woven-background.jpg") !important;
+  background-repeat: repeat !important;
+  background-position: center top !important;
+  background-size: auto !important;
+}
+
+.wara-mission-page-inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto !important;
+}
+
+.wara-mission-page-content,
+.wara-mission-join {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 650px) {
+  .wara-mission-page {
+    padding: 45px 16px 65px !important;
+  }
+}
