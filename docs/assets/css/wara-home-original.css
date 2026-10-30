@@ -104,3 +104,13 @@
     aspect-ratio:4/3;
   }
 }
+
+/* Original WARA woven background */
+.wara-mission,
+.wara-news {
+  background-color: #202126 !important;
+  background-image: url("../images/wara-woven-background.jpg") !important;
+  background-repeat: repeat !important;
+  background-size: auto !important;
+  background-position: top left !important;
+}
