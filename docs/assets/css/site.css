@@ -294,3 +294,30 @@
 .wara-mission-grid{grid-template-columns:1fr;gap:45px}
 .wara-mission-card{max-width:430px;margin:auto}
 }
+
+
+/* WARA HOMEPAGE STRUCTURE FIX */
+.wara-mission {
+  margin-top: 0;
+}
+.wara-mission .wrap {
+  max-width: 1170px;
+  margin-inline: auto;
+}
+.wara-mission-grid {
+  grid-template-columns: repeat(3, minmax(0,1fr));
+}
+.wara-mission-card {
+  box-sizing: border-box;
+}
+.wara-mission-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media(max-width:650px) {
+  .wara-mission-grid {
+    grid-template-columns: 1fr;
+  }
+}
