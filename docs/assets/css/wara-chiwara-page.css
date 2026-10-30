@@ -1,0 +1,135 @@
+/* WARA Our Symbol page */
+
+.wara-chiwara-page {
+  min-height: 550px;
+  padding: 35px 24px 80px;
+  background: #202126 url("../images/wara-woven-background.jpg") repeat;
+  color: #f2f2f2;
+}
+
+.wara-chiwara-page,
+.wara-chiwara-page * {
+  box-sizing: border-box;
+}
+
+.wara-chiwara-inner {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.wara-chiwara-card {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  align-items: center;
+  gap: 48px;
+  padding: 48px;
+  background: #383a43;
+  border: 1px solid rgba(255,255,255,.1);
+}
+
+.wara-chiwara-image {
+  margin: 0;
+  padding: 25px;
+  background: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 330px;
+}
+
+.wara-chiwara-image img {
+  display: block;
+  max-width: 100%;
+  max-height: 340px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.wara-chiwara-content h1 {
+  color: #fff;
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 26px;
+}
+
+.wara-chiwara-content h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #35d5bf;
+  margin-top: 18px;
+}
+
+.wara-chiwara-content p {
+  color: #e6e6e8;
+  font-size: 16px;
+  line-height: 1.9;
+  margin: 0 0 20px;
+}
+
+.wara-chiwara-membership {
+  margin-top: 28px;
+  padding: 30px 38px;
+  background: #383a43;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.wara-chiwara-membership h2 {
+  color: #fff;
+  font-size: 27px;
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+
+.wara-chiwara-membership p {
+  color: #e6e6e8;
+  margin: 0;
+}
+
+.wara-chiwara-membership > a {
+  display: inline-block;
+  background: #35d5bf;
+  color: #142725;
+  padding: 14px 28px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.wara-chiwara-membership > a:hover {
+  background: #fff;
+}
+
+@media (max-width: 800px) {
+  .wara-chiwara-card {
+    grid-template-columns: 1fr;
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .wara-chiwara-image {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wara-chiwara-page {
+    padding: 25px 16px 60px;
+  }
+
+  .wara-chiwara-card {
+    padding: 22px;
+  }
+
+  .wara-chiwara-membership {
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
