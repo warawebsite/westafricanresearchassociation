@@ -1,0 +1,170 @@
+/* WARA Partner page */
+
+.wara-partner-page {
+  background: #202126 url("../images/wara-woven-background.jpg") repeat;
+  color: #f2f2f2;
+  min-height: 600px;
+  padding: 55px 24px 85px;
+}
+
+.wara-partner-page,
+.wara-partner-page * {
+  box-sizing: border-box;
+}
+
+.wara-partner-inner {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.wara-partner-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.wara-partner-heading > p {
+  color: #35d5bf;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.wara-partner-heading h1 {
+  color: #fff;
+  font-size: clamp(34px, 4vw, 46px);
+  font-weight: 300;
+  margin: 0;
+}
+
+.wara-partner-card {
+  display: grid;
+  grid-template-columns: minmax(260px, .85fr) minmax(0, 1.15fr);
+  gap: 38px;
+  padding: 38px;
+  background: #383a43;
+  border: 1px solid rgba(255,255,255,.10);
+  align-items: start;
+}
+
+.wara-partner-logo {
+  background: #fff;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
+}
+
+.wara-partner-logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.wara-partner-content h2 {
+  color: #fff;
+  font-size: clamp(25px, 3vw, 34px);
+  font-weight: 400;
+  margin: 0 0 20px;
+}
+
+.wara-partner-eyebrow {
+  color: #35d5bf !important;
+  font-size: 12px !important;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-weight: 600;
+}
+
+.wara-partner-content p {
+  color: #e6e6e8;
+  font-size: 16px;
+  line-height: 1.85;
+  margin-bottom: 18px;
+}
+
+.wara-partner-content a {
+  color: #35d5bf;
+}
+
+.wara-partner-benefit {
+  margin-top: 25px;
+  padding: 25px;
+  background: #292b32;
+  border-left: 4px solid #35d5bf;
+}
+
+.wara-partner-benefit strong {
+  display: block;
+  color: #fff;
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.wara-partner-benefit p {
+  margin: 0 0 15px;
+}
+
+.wara-partner-join {
+  margin-top: 30px;
+  padding: 32px 38px;
+  background: #383a43;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.wara-partner-join h2 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+
+.wara-partner-join p {
+  color: #e6e6e8;
+  margin: 0;
+}
+
+.wara-partner-join > a {
+  background: #35d5bf;
+  color: #142725;
+  padding: 14px 28px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.wara-partner-join > a:hover {
+  background: #fff;
+}
+
+@media(max-width:800px) {
+  .wara-partner-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width:600px) {
+  .wara-partner-page {
+    padding: 40px 16px 65px;
+  }
+
+  .wara-partner-card {
+    padding: 22px;
+    gap: 24px;
+  }
+
+  .wara-partner-logo {
+    min-height: 180px;
+  }
+
+  .wara-partner-join {
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
