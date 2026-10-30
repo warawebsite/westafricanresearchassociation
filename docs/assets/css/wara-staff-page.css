@@ -68,3 +68,54 @@
     max-width: 260px;
   }
 }
+
+/* Original WordPress staff content */
+.wara-staff-original-content {
+  background: #383a43;
+  padding: 40px;
+  color: #e6e6e8;
+}
+
+.wara-staff-original-content h2,
+.wara-staff-original-content h3,
+.wara-staff-original-content h4 {
+  color: #fff;
+  margin: 28px 0 15px;
+  line-height: 1.35;
+}
+
+.wara-staff-original-content p,
+.wara-staff-original-content li {
+  color: #e6e6e8;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.wara-staff-original-content img {
+  max-width: 260px;
+  height: auto;
+  margin: 0 24px 20px 0;
+  object-fit: cover;
+}
+
+.wara-staff-original-content a {
+  color: #35d5bf;
+}
+
+.wara-staff-original-content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@media (max-width: 700px) {
+  .wara-staff-original-content {
+    padding: 24px;
+  }
+
+  .wara-staff-original-content img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 24px;
+  }
+}
