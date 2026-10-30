@@ -133,3 +133,42 @@
         background-position: center;
     }
 }
+
+
+/* WARA homepage restoration */
+.home-intro {
+    min-height: 440px;
+    display: flex;
+    align-items: center;
+}
+.home-intro .wrap {
+    width: min(1170px, calc(100% - 40px));
+}
+.home-intro h1 {
+    max-width: 790px;
+}
+.cards .card {
+    border-radius: 3px;
+    transition: box-shadow 180ms ease;
+}
+.cards .card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+.cards .card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    background: #f5f6f5;
+}
+.cards-4 .card-body {
+    min-height: 175px;
+}
+@media(max-width:650px) {
+    .home-intro {
+        min-height: 350px;
+    }
+    .cards-4 .card-body {
+        min-height: auto;
+    }
+}
