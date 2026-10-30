@@ -133,3 +133,57 @@
     padding: 26px 22px;
   }
 }
+
+/* Board portrait cards */
+
+.wara-board-portrait {
+  display: block;
+  width: 100%;
+  height: 245px;
+  overflow: hidden;
+  background: #292c32;
+}
+
+.wara-board-portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  transition: transform .25s ease;
+}
+
+.wara-board-card:hover .wara-board-portrait img {
+  transform: scale(1.035);
+}
+
+.wara-board-no-photo {
+  width: 100%;
+  height: 100%;
+  background: #30353c;
+}
+
+.wara-board-card h3 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.wara-board-card h3 a:hover,
+.wara-board-read-more:hover {
+  color: #35d5bf;
+}
+
+.wara-board-read-more {
+  display: inline-block;
+  color: #35d5bf;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 12px;
+}
+
+@media (max-width: 600px) {
+  .wara-board-portrait {
+    height: 290px;
+  }
+}
