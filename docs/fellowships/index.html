@@ -1,0 +1,6 @@
+---
+layout: page
+title: "Fellowships"
+permalink: /fellowships/
+---
+<p>WARA offers research awards including travel grants, residencies, and pre- and post-doctoral fellowships. Eligibility varies by award.</p><div class="cards cards-3">{% for item in site.data.navigation.items %}{% if item.title == 'Fellowships' %}{% for child in item.children %}<article class="card"><div class="card-body"><h2><a href="{{ child.url | relative_url }}">{{ child.title }}</a></h2></div></article>{% endfor %}{% endif %}{% endfor %}</div>

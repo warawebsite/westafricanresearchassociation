@@ -1,0 +1,16 @@
+title: West African Research Association | WARA
+description: Promoting scholarly exchange with West Africa, USA, and the global community.
+url: "https://warawebsite.github.io"
+baseurl: "https://warawebsite.github.io"
+markdown: kramdown
+permalink: pretty
+collections:
+  fellows:
+    output: false
+  programs:
+    output: false
+exclude:
+  - README.md
+  - MIGRATION_AUDIT.md
+  - Gemfile
+  - Gemfile.lock

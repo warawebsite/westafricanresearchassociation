@@ -1,0 +1,31 @@
+
+# Private WordPress migration materials
+*.sql
+*.sql.gz
+*.zip
+*.wpress
+wp-admin/
+wp-includes/
+wp-config.php
+private-backup/
+migration/public-mirror/
+.env
+.env.*
+
+# Raw migration inventories and exports
+migration/reports/
+migration/public-mirror/
+*.sql
+*.sql.gz
+*.wpress
+*.zip
+*.xml
+
+# Raw migration inventories and exports
+migration/reports/
+migration/public-mirror/
+*.sql
+*.sql.gz
+*.wpress
+*.zip
+*.xml
