@@ -2,4 +2,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ "/assets/css/wara-layout-fix.css" | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/wara-mission-page.css' | relative_url }}">
+<style>
+{% if page.url == '/about/mission-statement/' %}
+.page-header,
+.page-title,
+.breadcrumb-section,
+.breadcrumb-area,
+.inner-page-header {
+  display: none !important;
+}
+{% endif %}
+</style>
 </head><body>{% include header.html %}<main id="content">{{ content }}</main>{% include footer.html %}</body></html>
