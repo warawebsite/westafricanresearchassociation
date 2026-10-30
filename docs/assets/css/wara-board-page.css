@@ -1,0 +1,135 @@
+/* WARA Board of Directors */
+
+.wara-board-page {
+  position: relative;
+  left: 50%;
+  width: 100vw;
+  max-width: none;
+  margin-left: -50vw;
+  padding: 75px 24px 100px;
+  box-sizing: border-box;
+  background: #202126 url("../images/wara-woven-background.jpg") repeat;
+  color: #fff;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.wara-board-inner {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.wara-board-heading {
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.wara-board-kicker {
+  color: #35d5bf;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+}
+
+.wara-board-heading h1 {
+  color: #fff;
+  font-size: clamp(36px, 4vw, 48px);
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 14px 0;
+}
+
+.wara-board-heading > p:last-child {
+  color: #e0e0e0;
+  font-size: 17px;
+}
+
+.wara-board-group {
+  margin-bottom: 75px;
+}
+
+.wara-board-group h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 0 35px;
+}
+
+.wara-board-group h2::after {
+  content: "";
+  display: block;
+  width: 65px;
+  height: 3px;
+  background: #00c2a9;
+  margin: 18px auto 0;
+}
+
+.wara-board-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.wara-board-card {
+  background: #383a43;
+  border: 1px solid rgba(255,255,255,.12);
+  transition: transform .2s ease, border-color .2s ease;
+}
+
+.wara-board-card:hover {
+  transform: translateY(-3px);
+  border-color: #00c2a9;
+}
+
+.wara-board-card-body {
+  padding: 32px 28px;
+}
+
+.wara-board-role {
+  color: #35d5bf;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin: 0 0 14px;
+}
+
+.wara-board-card h3 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0 0 12px;
+}
+
+.wara-board-institution {
+  color: #e0e1e5;
+  font-size: 15px;
+  margin-bottom: 22px;
+}
+
+.wara-board-bio {
+  color: #e9e9ed;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+@media(max-width:900px) {
+  .wara-board-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:600px) {
+  .wara-board-page {
+    padding: 50px 16px 70px;
+  }
+
+  .wara-board-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wara-board-card-body {
+    padding: 26px 22px;
+  }
+}
