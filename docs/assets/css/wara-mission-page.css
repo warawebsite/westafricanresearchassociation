@@ -204,3 +204,24 @@
 html, body {
   overflow-x: clip;
 }
+
+/* Mission Statement: remove unwanted title banner and spacing */
+body:has(.wara-mission-page) .page-header,
+body:has(.wara-mission-page) .page-title,
+body:has(.wara-mission-page) .page-banner,
+body:has(.wara-mission-page) .breadcrumb,
+body:has(.wara-mission-page) .breadcrumb-section,
+body:has(.wara-mission-page) .inner-page-header {
+  display: none !important;
+}
+
+body:has(.wara-mission-page) main,
+body:has(.wara-mission-page) .page-content,
+body:has(.wara-mission-page) .content-wrapper {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+body:has(.wara-mission-page) .wara-mission-page {
+  margin-top: 0 !important;
+}
