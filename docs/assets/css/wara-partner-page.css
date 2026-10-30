@@ -168,3 +168,12 @@
     align-items: flex-start;
   }
 }
+
+/* Compact layout after removing the partner heading */
+.wara-partner-page {
+  padding-top: 30px;
+}
+
+.wara-partner-card {
+  margin-top: 0;
+}
