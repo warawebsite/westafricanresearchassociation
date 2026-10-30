@@ -321,3 +321,59 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+/* WALLSTREET MISSION RESTORATION */
+.wara-mission {
+  background-color: #22252b;
+  padding: 75px 0 85px;
+  color: #fff;
+}
+.wara-mission .section-title {
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+}
+.wara-mission-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 30px;
+  align-items: stretch;
+}
+.wara-mission-card {
+  position: relative;
+  text-align: center;
+  padding-top: 75px;
+}
+.wara-mission-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2;
+  border: 3px solid #00c2a9;
+}
+.wara-mission-content {
+  min-height: 245px;
+  padding: 85px 24px 30px;
+  border: 1px solid #777;
+  background: transparent;
+}
+.wara-mission-content h3 {
+  color: #fff;
+  font-size: 22px;
+}
+.wara-mission-content p {
+  color: #c4c4c4;
+  line-height: 1.7;
+}
+@media(max-width:700px) {
+  .wara-mission-grid {
+    grid-template-columns: 1fr;
+  }
+}
