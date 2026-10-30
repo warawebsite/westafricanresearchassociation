@@ -114,3 +114,103 @@
   background-size: auto !important;
   background-position: top left !important;
 }
+
+/* WARA News & Activities — original Wallstreet layout */
+.wara-news {
+  font-family:Roboto,Arial,sans-serif;
+  padding-top:72px!important;
+  padding-bottom:95px!important;
+}
+.wara-news .section-title {
+  font-family:Roboto,Arial,sans-serif;
+  font-weight:300!important;
+  font-size:38px!important;
+  letter-spacing:.2px;
+  margin-bottom:75px!important;
+}
+.wara-news .cards {
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  align-items:stretch;
+  gap:24px!important;
+}
+.wara-news .wara-news-card {
+  display:flex!important;
+  flex-direction:column;
+  background:#383a43!important;
+  border:0!important;
+  border-radius:0!important;
+  padding:0!important;
+  box-shadow:none!important;
+}
+.wara-news .wara-news-card .card-body {
+  display:flex;
+  flex-direction:column;
+  flex:1;
+  padding:28px 25px 30px!important;
+}
+.wara-news-meta {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  border-bottom:1px dotted #666873;
+  padding-bottom:27px;
+  margin-bottom:30px;
+  color:#e4e5e8;
+  font-size:13px;
+}
+.wara-news-meta .eyebrow {
+  margin:0!important;
+  font-size:13px!important;
+  font-weight:400!important;
+  text-transform:none!important;
+}
+.wara-comment-count {
+  white-space:nowrap;
+  font-size:12px;
+}
+.wara-news .wara-news-card h3 {
+  font-family:Roboto,Arial,sans-serif;
+  font-size:34px!important;
+  line-height:1.32!important;
+  font-weight:300!important;
+  letter-spacing:.1px;
+  margin:0 0 25px!important;
+  color:#fff!important;
+}
+.wara-news .wara-news-card p:not(.eyebrow) {
+  font-size:16px!important;
+  line-height:1.75!important;
+  color:#f0f0f2!important;
+}
+.wara-news .wara-read-more {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  align-self:flex-start;
+  margin-top:auto;
+  padding:13px 20px;
+  background:#00c2a9;
+  color:#fff!important;
+  font-size:13px;
+  font-weight:500;
+  text-decoration:none!important;
+  border-radius:2px;
+}
+.wara-news .wara-read-more:hover {
+  background:#009e8b;
+}
+@media(max-width:950px) {
+  .wara-news .cards {
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
+@media(max-width:650px) {
+  .wara-news .cards {
+    grid-template-columns:1fr!important;
+  }
+  .wara-news .wara-news-card h3 {
+    font-size:29px!important;
+  }
+}
