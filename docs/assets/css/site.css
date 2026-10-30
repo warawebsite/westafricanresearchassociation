@@ -80,3 +80,56 @@
     transition: none;
   }
 }
+
+
+/* WARA original branding restoration */
+.brand-logo {
+    display: inline-flex;
+    align-items: center;
+    max-width: 320px;
+    text-decoration: none;
+}
+.brand-logo img {
+    display: block;
+    width: min(300px, 100%);
+    height: auto;
+    max-height: 95px;
+    object-fit: contain;
+    object-position: left center;
+}
+.header-inner {
+    min-height: 105px;
+}
+.home-intro {
+    position: relative;
+    isolation: isolate;
+    background:
+      linear-gradient(90deg, rgba(0,0,0,.82), rgba(0,0,0,.38)),
+      url("../images/wara-original/wara-baobab.jpg")
+      center center / cover no-repeat;
+    padding: 110px 0;
+}
+.home-intro h1 {
+    color: #fff;
+    text-shadow: 0 2px 12px rgba(0,0,0,.25);
+}
+.home-intro .eyebrow {
+    color: #baf2e7;
+}
+.home-intro .wrap {
+    position: relative;
+    z-index: 1;
+}
+@media (max-width: 650px) {
+    .brand-logo img {
+        max-width: 210px;
+        max-height: 75px;
+    }
+    .header-inner {
+        min-height: 85px;
+    }
+    .home-intro {
+        padding: 75px 0;
+        background-position: center;
+    }
+}
