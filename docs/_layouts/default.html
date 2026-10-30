@@ -8,37 +8,59 @@
 <link rel="stylesheet" href="{{ '/assets/css/wara-staff-page.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/wara-partner-page.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/wara-chiwara-page.css' | relative_url }}">
-</head><body>{% include header.html %}<main id="content">{{ content }}</main><!-- WARA GLOBAL TRANSLATION AND SOCIAL LINKS -->
-<div class="wara-global-tools">
+<link rel="stylesheet" href="{{ '/assets/css/wara-global-tools.css' | relative_url }}">
+</head><body>{% include header.html %}<main id="content">{{ content }}</main>
 
-  <div class="wara-translate">
-    <div class="wara-language-options" aria-label="Translation languages">
-      <a href="#" data-wara-lang="en" aria-label="English" title="English">🇺🇸</a>
-      <a href="#" data-wara-lang="fr" aria-label="French" title="French">🇫🇷</a>
-      <a href="#" data-wara-lang="pt" aria-label="Portuguese" title="Portuguese">🇵🇹</a>
+<!-- WARA GLOBAL TRANSLATION AND SOCIAL LINKS -->
+<section class="wara-global-tools" aria-label="Language and social media">
+
+  <div class="wara-global-language">
+    <p class="wara-global-language-title">
+      Explore WARA in your language
+    </p>
+
+    <div class="wara-language-options" aria-label="Choose a language">
+      <a href="#" data-wara-lang="en" aria-label="English">
+        <span aria-hidden="true">🇺🇸</span>
+        <span>English</span>
+      </a>
+
+      <a href="#" data-wara-lang="fr" aria-label="Français">
+        <span aria-hidden="true">🇫🇷</span>
+        <span>Français</span>
+      </a>
+
+      <a href="#" data-wara-lang="pt" aria-label="Português">
+        <span aria-hidden="true">🇵🇹</span>
+        <span>Português</span>
+      </a>
     </div>
-    <button type="button" class="wara-translate-trigger"
-            aria-expanded="true">Translate Page »</button>
+
+    <p class="wara-language-note">
+      Translations open in a new tab.
+    </p>
   </div>
 
-  <nav class="wara-social-bar" aria-label="WARA social media">
+  <nav class="wara-social-bar" aria-label="Follow WARA">
     <a href="https://twitter.com/west_wara"
        target="_blank" rel="noopener noreferrer"
        aria-label="WARA on X">𝕏</a>
+
     <a href="https://www.facebook.com/west.african.research.association/"
        target="_blank" rel="noopener noreferrer"
        aria-label="WARA on Facebook">f</a>
+
     <a href="https://www.youtube.com/channel/UC1sqLyfshzln_CVtebdWCxg"
        target="_blank" rel="noopener noreferrer"
        aria-label="WARA on YouTube">▶</a>
+
     <a href="https://www.instagram.com/warawarc"
        target="_blank" rel="noopener noreferrer"
        aria-label="WARA on Instagram">◎</a>
   </nav>
 
-</div>
+</section>
 <!-- END WARA GLOBAL TOOLS -->
-
 {% include footer.html %}
 
 
