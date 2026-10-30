@@ -1,0 +1,53 @@
+name: Test WARA Jekyll Website
+
+on:
+  push:
+    branches:
+      - migration/wordpress-to-static
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: false
+
+      - name: Install Jekyll dependencies
+        working-directory: docs
+        run: |
+          gem install bundler
+          bundle install
+
+      - name: Build Jekyll website
+        working-directory: docs
+        run: |
+          bundle exec jekyll build \
+            --destination ../_site \
+            --trace
+
+      - name: Verify generated website
+        run: |
+          test -f _site/index.html
+          test -f _site/assets/css/site.css
+          test -f _site/assets/js/site.js
+          test -f _site/announcements/in-their-own-words/index.html
+
+          echo "WARA Jekyll build completed successfully."
+
+      - name: Upload website preview artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: wara-staging-build
+          path: _site/
+          retention-days: 7

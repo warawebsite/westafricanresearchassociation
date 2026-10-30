@@ -29,3 +29,5 @@ migration/public-mirror/
 *.wpress
 *.zip
 *.xml
+
+migration/gallery-backup/
