@@ -9,23 +9,36 @@
 <link rel="stylesheet" href="{{ '/assets/css/wara-partner-page.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/wara-chiwara-page.css' | relative_url }}">
 </head><body>{% include header.html %}<main id="content">{{ content }}</main>{% include footer.html %}
+
+
+
+
 <!-- WARA GLOBAL TRANSLATION AND SOCIAL LINKS -->
 <div class="wara-global-tools">
 
   <div class="wara-translate">
-    <div class="wara-language-options" aria-label="Select language">
-      <button type="button" data-wara-lang="en" title="English" aria-label="English">🇺🇸</button>
-      <button type="button" data-wara-lang="fr" title="French" aria-label="French">🇫🇷</button>
-      <button type="button" data-wara-lang="pt" title="Portuguese" aria-label="Portuguese">🇵🇹</button>
+    <div class="wara-language-options" aria-label="Translation languages">
+      <a href="#" data-wara-lang="en" aria-label="English" title="English">🇺🇸</a>
+      <a href="#" data-wara-lang="fr" aria-label="French" title="French">🇫🇷</a>
+      <a href="#" data-wara-lang="pt" aria-label="Portuguese" title="Portuguese">🇵🇹</a>
     </div>
-    <button type="button" class="wara-translate-trigger">Translate Page »</button>
+    <button type="button" class="wara-translate-trigger"
+            aria-expanded="true">Translate Page »</button>
   </div>
 
   <nav class="wara-social-bar" aria-label="WARA social media">
-    <a href="https://twitter.com/west_wara" target="_blank" rel="noopener noreferrer" aria-label="WARA on X">𝕏</a>
-    <a href="https://www.facebook.com/west.african.research.association/" target="_blank" rel="noopener noreferrer" aria-label="WARA on Facebook">f</a>
-    <a href="https://www.youtube.com/channel/UC1sqLyfshzln_CVtebdWCxg" target="_blank" rel="noopener noreferrer" aria-label="WARA on YouTube">▶</a>
-    <a href="https://www.instagram.com/warawarc" target="_blank" rel="noopener noreferrer" aria-label="WARA on Instagram">◎</a>
+    <a href="https://twitter.com/west_wara"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="WARA on X">𝕏</a>
+    <a href="https://www.facebook.com/west.african.research.association/"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="WARA on Facebook">f</a>
+    <a href="https://www.youtube.com/channel/UC1sqLyfshzln_CVtebdWCxg"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="WARA on YouTube">▶</a>
+    <a href="https://www.instagram.com/warawarc"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="WARA on Instagram">◎</a>
   </nav>
 
 </div>
