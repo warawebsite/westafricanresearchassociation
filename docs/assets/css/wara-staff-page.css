@@ -1,0 +1,70 @@
+.wara-staff-page {
+  background: #202126 url("../images/wara-woven-background.jpg") repeat;
+  color: #f2f2f2;
+  padding: 55px 24px 85px;
+  min-height: 600px;
+}
+
+.wara-staff-inner {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.wara-staff-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.wara-staff-heading h1 {
+  color: #fff;
+  font-size: clamp(34px, 4vw, 46px);
+  font-weight: 300;
+}
+
+.wara-staff-card {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 35px;
+  padding: 35px;
+  margin-bottom: 28px;
+  background: #383a43;
+  border: 1px solid rgba(255,255,255,.1);
+}
+
+.wara-staff-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.wara-staff-info h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0 0 8px;
+}
+
+.wara-staff-role {
+  color: #35d5bf !important;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.wara-staff-info p {
+  color: #e6e6e8;
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 0 0 16px;
+}
+
+@media(max-width:700px) {
+  .wara-staff-card {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+
+  .wara-staff-photo {
+    max-width: 260px;
+  }
+}
