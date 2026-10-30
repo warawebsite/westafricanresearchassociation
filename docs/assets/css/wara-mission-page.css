@@ -1,0 +1,148 @@
+/* WARA Mission Statement — interior page */
+
+.wara-mission-page {
+  width: 100%;
+  padding: 72px 24px 95px;
+  box-sizing: border-box;
+  background: #202126 url("../images/wara-woven-background.jpg") repeat;
+  color: #f4f4f5;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.wara-mission-page-inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.wara-mission-page-header {
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.wara-mission-kicker {
+  color: #00c2a9;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.wara-mission-page-header h1 {
+  color: #fff;
+  font-size: clamp(34px, 4vw, 46px);
+  font-weight: 300;
+  margin: 14px 0 22px;
+}
+
+.wara-mission-page-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 46px 52px;
+  box-sizing: border-box;
+  background: #383a43;
+  border-top: 3px solid #00c2a9;
+}
+
+.wara-mission-page-content p {
+  color: #ededf0;
+  font-size: 17px;
+  line-height: 1.9;
+  margin: 0 0 24px;
+}
+
+.wara-mission-page-content p:last-child {
+  margin-bottom: 0;
+}
+
+.wara-mission-page-content .wara-mission-lead {
+  font-size: 19px;
+  line-height: 1.85;
+  color: #fff;
+}
+
+.wara-mission-page-content a,
+.wara-mission-join nav a {
+  color: #43dfc9;
+  text-underline-offset: 4px;
+}
+
+.wara-mission-join {
+  max-width: 900px;
+  margin: 35px auto 0;
+  padding: 38px 40px;
+  text-align: center;
+  background: #383a43;
+  box-sizing: border-box;
+}
+
+.wara-mission-join h2 {
+  color: #fff;
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 0 0 24px;
+}
+
+.wara-mission-join-button {
+  display: inline-block;
+  background: #00bda5;
+  color: #fff !important;
+  text-decoration: none;
+  padding: 13px 30px;
+  font-weight: 500;
+  border-radius: 2px;
+}
+
+.wara-mission-join-button:hover {
+  background: #009d89;
+}
+
+.wara-mission-join p {
+  color: #e9e9ed;
+  margin: 28px 0 16px;
+}
+
+.wara-mission-join nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: 650px) {
+  .wara-mission-page {
+    padding: 50px 16px 65px;
+  }
+
+  .wara-mission-page-content {
+    padding: 30px 24px;
+  }
+
+  .wara-mission-page-content p {
+    font-size: 16px;
+  }
+
+  .wara-mission-page-content .wara-mission-lead {
+    font-size: 17px;
+  }
+
+  .wara-mission-join {
+    padding: 30px 22px;
+  }
+}
+
+/* Original WARA Mission Statement image */
+.wara-mission-figure {
+  margin: 35px 0 0;
+  text-align: center;
+}
+
+.wara-mission-figure img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
