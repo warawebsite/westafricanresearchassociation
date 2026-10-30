@@ -1,0 +1,106 @@
+/* Original WARA homepage section restoration */
+.wara-fellows {
+  background:#35363e!important;
+  color:#fff;
+  padding:75px 20px 95px;
+}
+.wara-fellows .section-title,
+.wara-news .section-title {
+  color:#fff!important;
+  text-align:center;
+  font-size:36px;
+  font-weight:400;
+}
+.wara-fellows .cards {
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:24px!important;
+  max-width:1150px;
+  margin:90px auto 0;
+}
+.wara-fellows .card {
+  padding:0!important;
+  background:#35363e!important;
+  color:#fff!important;
+  border:0!important;
+  border-radius:0!important;
+  overflow:hidden;
+  box-shadow:none!important;
+}
+.wara-fellow-photo {
+  display:block;
+  width:100%;
+  height:420px;
+  object-fit:cover;
+}
+.wara-fellows .card-body {
+  padding:24px 12px 32px;
+  background:#35363e;
+}
+.wara-fellows .card h3,
+.wara-fellows .card p {color:#fff!important}
+.wara-news {
+  background:#202126!important;
+  color:#fff;
+  max-width:none!important;
+  padding:75px max(20px,calc((100% - 1170px)/2)) 95px!important;
+}
+.wara-news .cards {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:24px;
+}
+.wara-news .card {
+  background:#3b3c45!important;
+  border:0!important;
+  border-radius:0!important;
+  color:#fff!important;
+}
+.wara-news .card h3,
+.wara-news .card p,
+.wara-news .eyebrow {color:#fff!important}
+@media(max-width:700px) {
+  .wara-fellows .cards,
+  .wara-news .cards {
+    grid-template-columns:1fr!important;
+  }
+  .wara-fellow-photo {height:auto;aspect-ratio:4/3}
+}
+
+/* Original Wallstreet Featured Fellows photographs */
+.wara-fellows .cards {
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:28px!important;
+}
+.wara-fellows .card {
+  display:block!important;
+  background:#35363e!important;
+  overflow:hidden;
+}
+.wara-fellows .wara-fellow-photo {
+  display:block;
+  width:100%;
+  height:390px;
+  object-fit:cover;
+  object-position:center;
+}
+.wara-fellows .card-body {
+  padding:24px 10px 38px!important;
+  background:#35363e!important;
+}
+.wara-fellows .card h3 {
+  color:#fff!important;
+  font-weight:600;
+}
+.wara-fellows .card p {
+  color:#dedee2!important;
+}
+@media(max-width:700px) {
+  .wara-fellows .cards {
+    grid-template-columns:1fr!important;
+  }
+  .wara-fellows .wara-fellow-photo {
+    height:auto;
+    aspect-ratio:4/3;
+  }
+}

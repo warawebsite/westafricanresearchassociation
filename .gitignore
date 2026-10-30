@@ -31,3 +31,14 @@ migration/public-mirror/
 *.xml
 
 migration/gallery-backup/
+
+# WordPress migration: exclude temporary and private source files
+wp-config.php
+*.sql
+*.sql.gz
+*.bak
+*.log
+wara-original-home.html
+
+# Original WordPress reference archive (not needed for deployment)
+/docs/assets/wara-original/
