@@ -281,3 +281,16 @@
 .wara-mission-content {
     background: rgba(0,0,0,.10);
 }
+
+/* WARA mission refinements */
+.wara-mission .section-title::after{display:none}
+.wara-mission-divider{display:flex;align-items:center;justify-content:center;gap:8px;margin:12px auto 45px}
+.wara-mission-divider span{width:72px;height:2px;background:#00bda9}
+.wara-mission-divider i{width:10px;height:10px;background:#00bda9;transform:rotate(45deg)}
+.wara-mission-grid{gap:30px}
+.wara-mission-image{border:3px solid #f5f5f5;box-shadow:0 0 0 5px rgba(255,255,255,.05)}
+.wara-mission-content{background:rgba(0,0,0,.07)}
+@media(max-width:650px){
+.wara-mission-grid{grid-template-columns:1fr;gap:45px}
+.wara-mission-card{max-width:430px;margin:auto}
+}
