@@ -377,3 +377,62 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* WARA ORIGINAL HOMEPAGE SECTION STYLING */
+.wara-fellows {
+  background: #35363e !important;
+  color: #fff;
+  padding: 80px 0 95px;
+}
+.wara-fellows .section-title,
+.wara-news .section-title {
+  color: #fff !important;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+}
+.wara-fellows .section-title::after,
+.wara-news .section-title::after {
+  background: #00c2a9;
+}
+.wara-fellows .cards {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 25px;
+  max-width: 1150px;
+  margin: 65px auto 0;
+}
+.wara-fellows .card {
+  background: #3b3c45;
+  color: #fff;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.wara-fellows .card h3 {
+  color: #fff;
+}
+.wara-fellows .card p {
+  color: #e1e1e1;
+}
+.wara-news {
+  background: #27292e;
+  color: #fff;
+  max-width: none !important;
+  padding: 75px max(20px,calc((100% - 1170px)/2)) 90px;
+}
+.wara-news .card {
+  background: #3b3c45;
+  color: #fff;
+  border: 0;
+  border-radius: 0;
+}
+.wara-news .card h3,
+.wara-news .card p {
+  color: #fff;
+}
+@media(max-width:700px) {
+  .wara-fellows .cards {
+    grid-template-columns: 1fr;
+  }
+}
