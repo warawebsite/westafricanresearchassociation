@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Mission Statement"
 permalink: /about/mission-statement/
 ---
