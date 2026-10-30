@@ -172,3 +172,112 @@
         min-height: auto;
     }
 }
+
+
+/* WARA original mission section */
+.wara-mission {
+    background-color: #191c1d;
+    color: #fff;
+    padding: 70px 0 85px;
+}
+.wara-mission .section-title {
+    color: #fff;
+    font-weight: 400;
+}
+.wara-mission-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 45px;
+    margin-top: 95px;
+}
+.wara-mission-card {
+    position: relative;
+    padding-top: 95px;
+}
+.wara-mission-image {
+    position: absolute;
+    z-index: 2;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #444;
+}
+.wara-mission-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.wara-mission-content {
+    border: 1px solid rgba(255,255,255,.65);
+    min-height: 230px;
+    padding: 125px 25px 30px;
+    text-align: center;
+}
+.wara-mission-content h3 {
+    font-size: 23px;
+    font-weight: 400;
+    margin: 0 0 15px;
+}
+.wara-mission-content p {
+    color: #eee;
+    line-height: 1.7;
+}
+@media(max-width:900px) {
+    .wara-mission-grid {
+        gap: 20px;
+    }
+    .wara-mission-image {
+        width: 160px;
+        height: 160px;
+    }
+}
+@media(max-width:650px) {
+    .wara-mission-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+    .wara-mission-card {
+        max-width: 420px;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+
+/* WARA woven-cloth reconstruction */
+.wara-mission {
+    background-color: #17191a;
+    background-image:
+        repeating-linear-gradient(
+            0deg,
+            rgba(255,255,255,.035) 0px,
+            rgba(255,255,255,.035) 1px,
+            transparent 1px,
+            transparent 4px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(255,255,255,.028) 0px,
+            rgba(255,255,255,.028) 1px,
+            transparent 1px,
+            transparent 4px
+        ),
+        linear-gradient(
+            135deg,
+            #202324,
+            #111314
+        );
+}
+.wara-mission .section-title::after {
+    width: 140px;
+    height: 3px;
+    background: #00c2a9;
+}
+.wara-mission-content {
+    background: rgba(0,0,0,.10);
+}
