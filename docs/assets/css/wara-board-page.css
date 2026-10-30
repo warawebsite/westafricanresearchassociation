@@ -187,3 +187,12 @@
     height: 290px;
   }
 }
+
+/* Board page: remove unnecessary top spacing */
+.wara-board-page {
+  padding-top: 35px;
+}
+
+.wara-board-group:first-child {
+  margin-top: 0;
+}
